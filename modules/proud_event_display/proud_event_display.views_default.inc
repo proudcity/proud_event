@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * helm_event.views_default.inc
+ * proud_event.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function helm_event_views_default_views() {
+function proud_event_views_default_views() {
   $export = array();
 
   $view = new view();

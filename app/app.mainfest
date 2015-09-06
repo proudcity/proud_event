@@ -1,6 +1,6 @@
 name = Proud Event
 description = An Event content type and listing
-machine_name = helm_event
+machine_name = proud_event
 version = 7.x-1.0-beta1
 author = Albatross Digital
 author_url = http://albatrossdigital.com

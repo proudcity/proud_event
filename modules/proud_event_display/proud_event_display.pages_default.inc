@@ -11,7 +11,7 @@ function proud_event_display_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
-  $page->name = 'helm_events';
+  $page->name = 'proud_events';
   $page->task = 'page';
   $page->admin_title = 'Proud Events';
   $page->admin_description = '';
@@ -37,9 +37,9 @@ function proud_event_display_default_page_manager_pages() {
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_helm_events__panel_context_b722176a-bc6d-453c-abe3-027d4e0a5e60';
+  $handler->name = 'page_proud_events__panel_context_b722176a-bc6d-453c-abe3-027d4e0a5e60';
   $handler->task = 'page';
-  $handler->subtask = 'helm_events';
+  $handler->subtask = 'proud_events';
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
@@ -54,7 +54,7 @@ function proud_event_display_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'helm_sidebar_left';
+  $display->layout = 'proud_sidebar_left';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -132,7 +132,7 @@ function proud_event_display_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['helm_events'] = $page;
+  $pages['proud_events'] = $page;
 
   return $pages;
 
