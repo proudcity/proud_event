@@ -1,7 +1,7 @@
-name = Helm Event Calendar
+name = Proud Event Calendar
 description = An interactive event calendar with FullCalendar
 core = 7.x
-package = Helm Display
+package = Proud Display
 dependencies[] = date_ical
 dependencies[] = fullcalendar
 dependencies[] = list

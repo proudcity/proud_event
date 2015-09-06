@@ -1,4 +1,4 @@
-name = Helm Event
+name = Proud Event
 description = An Event content type and listing
 machine_name = helm_event
 version = 7.x-1.0-beta1

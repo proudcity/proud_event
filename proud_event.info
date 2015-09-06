@@ -1,7 +1,7 @@
-name = Helm Event
+name = Proud Event
 description = An Event content type and listing
 core = 7.x
-package = Helm
+package = Proud
 version = 7.x-1.0-beta1
 project = proud_event
 dependencies[] = angular_media
