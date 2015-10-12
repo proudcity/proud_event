@@ -17,6 +17,12 @@ function proud_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -25,6 +31,12 @@ function proud_event_field_default_field_instances() {
         'weight' => 3,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'list' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -73,6 +85,12 @@ function proud_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'file',
@@ -81,6 +99,12 @@ function proud_event_field_default_field_instances() {
         'weight' => 5,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'list' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -153,6 +177,12 @@ function proud_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'date',
@@ -162,12 +192,19 @@ function proud_event_field_default_field_instances() {
           'multiple_from' => 'now',
           'multiple_number' => 1,
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'hide',
         ),
         'type' => 'date_default',
         'weight' => 1,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'list' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -220,16 +257,22 @@ function proud_event_field_default_field_instances() {
   // Exported field_instance: 'node-event-field_event_address'
   $field_instances['node-event-field_event_address'] = array(
     'bundle' => 'event',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 9,
       ),
       'featured' => array(
         'label' => 'above',
@@ -237,7 +280,7 @@ function proud_event_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
-      'live_results_search' => array(
+      'list' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -251,9 +294,8 @@ function proud_event_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'fences_wrapper' => 'div',
     'field_name' => 'field_event_address',
-    'label' => 'Location and Address',
+    'label' => 'Address',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -261,31 +303,34 @@ function proud_event_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'text',
+      'module' => 'geocoder_autocomplete',
       'settings' => array(
-        'rows' => 3,
+        'size' => 60,
       ),
-      'type' => 'text_textarea',
-      'weight' => 5,
+      'type' => 'geocoder_autocomplete',
+      'weight' => 3,
     ),
   );
 
   // Exported field_instance: 'node-event-field_event_category'
   $field_instances['node-event-field_event_category'] = array(
     'bundle' => 'event',
-    'default_value' => array(),
-    'default_value_function' => '',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 6,
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 10,
       ),
       'featured' => array(
         'label' => 'above',
@@ -293,7 +338,7 @@ function proud_event_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
-      'live_results_search' => array(
+      'list' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -303,7 +348,7 @@ function proud_event_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
@@ -311,24 +356,14 @@ function proud_event_field_default_field_instances() {
     'label' => 'Category',
     'required' => 0,
     'settings' => array(
-      'behaviors' => array(
-        'prepopulate' => array(
-          'status' => 0,
-        ),
-        'taxonomy-index' => array(
-          'status' => TRUE,
-        ),
-      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(
-        'use_select2' => FALSE,
-      ),
+      'settings' => array(),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 5,
     ),
   );
 
@@ -338,6 +373,12 @@ function proud_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'geofield',
@@ -348,6 +389,12 @@ function proud_event_field_default_field_instances() {
         'weight' => 8,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'list' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -395,7 +442,7 @@ function proud_event_field_default_field_instances() {
         ),
       ),
       'type' => 'geocoder',
-      'weight' => 6,
+      'weight' => 4,
     ),
   );
 
@@ -405,6 +452,12 @@ function proud_event_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'media_formatters',
@@ -428,6 +481,12 @@ function proud_event_field_default_field_instances() {
         'weight' => 2,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'list' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -482,73 +541,19 @@ function proud_event_field_default_field_instances() {
         ),
       ),
       'type' => 'file_angular_media',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'node-event-field_subtitle'
-  $field_instances['node-event-field_subtitle'] = array(
-    'bundle' => 'event',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'live_results_search' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 14,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_subtitle',
-    'label' => 'Subtitle',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 6,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Address');
   t('Attachments');
   t('Category');
   t('Date');
   t('Description');
   t('Location');
-  t('Location and Address');
   t('Media');
-  t('Subtitle');
 
   return $field_instances;
 }
