@@ -332,12 +332,6 @@ function proud_event_field_default_field_instances() {
         'type' => 'taxonomy_term_reference_link',
         'weight' => 10,
       ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'list' => array(
         'label' => 'above',
         'settings' => array(),
